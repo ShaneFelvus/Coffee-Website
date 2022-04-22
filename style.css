@@ -260,7 +260,7 @@ section {
 }
 
 .home h3 {
-  padding: 1rem 0;
+  padding: 2rem 0;
   font-size: 6rem;
   color: #fff;
   text-transform: capitalize;
@@ -270,6 +270,7 @@ section {
   color: #fff;
   border-color: #fff;
   text-transform: capitalize;
+  margin-bottom: 15rem;
 }
 
 .about span {
@@ -810,5 +811,27 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .home {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.7)),
+        to(rgba(0, 0, 0, 0.7))
+      ),
+      url("images/home-bg.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("images/home-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .home .link-btn {
+    margin-bottom: 0;
+    background: #512a10;
+    border: none;
   }
 }
